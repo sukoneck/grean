@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  /* padding: 0 0.5rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,6 +63,14 @@
   line-height: 1.5;
   font-size: 1.5rem;
   padding-bottom: 2rem;
+}
+
+.pics {
+  object-fit: contain;
+  padding-bottom: 15%;
+  padding-top: 15%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .code {

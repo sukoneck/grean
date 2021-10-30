@@ -8,7 +8,8 @@ export default function Home() {
       <Head>
         <title>grean</title>
         <meta name="description" content="an 🦙🍜™ project" />
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>"></link>
       </Head>
 
       <main className={styles.main}>
@@ -18,24 +19,29 @@ export default function Home() {
 
         <p className={styles.description}>
           💣 stanky 🌿 project
-          <br /><br />
-          humbly presented to you by 🦙🍜™ (very cool and classy)
+          <br />
+          humbly presented to you by a 🎓 PhD 
         </p>
 
-        <div>
-          <span className={styles.logo}>
-              <Image src="/images/profile.jpg" alt="grean" width={111} height={111} />
-          </span>
-        </div>
+        <p className={styles.pics}>
+          <Image 
+            src="/images/pipe.gif" 
+            alt="grean" 
+            // width={624} 
+            // height={332} 
+            width={489} 
+            height={489} 
+          />
+        </p>
 
       </main>
 
       <footer className={styles.footer}>
         <a
-          href="grean.xyz"
-          target="_blank"
+          href="/"
+          // target="_blank"
         >
-          Powered by 🦙🍜™
+          🦙🍜™
         </a>
       </footer>
     </div>
