@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: lightgreen;
 }
 
@@ -63,6 +63,8 @@
   line-height: 1.5;
   font-size: 1.5rem;
   padding-bottom: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .pics {
