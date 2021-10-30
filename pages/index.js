@@ -18,7 +18,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          💣 stanky 🌿 project
+          💣 🌿 project
           <br />
           humbly presented to you by a 🎓 PhD 
         </p>
