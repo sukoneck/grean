@@ -34,7 +34,6 @@ export default function Home() {
         <a
           href="grean.xyz"
           target="_blank"
-          rel="noopener noreferrer"
         >
           Powered by 🦙🍜™
         </a>
