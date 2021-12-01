@@ -14,14 +14,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <p className={styles.descriptionbox}>
-          under 🚧 construction
-        </p>
 
         <h1 className={styles.title}>
-        {/* <br /> */}
-        <i>grean</i>
-        {/* 💣 grean 🌿 */}
+          <i>grean</i>
         </h1>
 
         <p className={styles.pics}>
@@ -31,6 +26,12 @@ export default function Home() {
             width={489} 
             height={489} 
           />
+        </p>
+
+        <br /> <br /> <br /> 
+
+        <p className={styles.descriptionbox}>
+          under 🚧 construction
         </p>
 
       </main>
