@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import 'victormono'
 
 export default function Home() {
   return (
@@ -13,15 +14,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Grean
-        </h1>
-
-        <p className={styles.description}>
-          💣 🌿 project
-          <br />
-          humbly presented to you by a 🎓 PhD 
+        <p className={styles.descriptionbox}>
+          under 🚧 construction
         </p>
+
+        <h1 className={styles.title}>
+        {/* <br /> */}
+        <i>grean</i>
+        {/* 💣 grean 🌿 */}
+        </h1>
 
         <p className={styles.pics}>
           <Image 
