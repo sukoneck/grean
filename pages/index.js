@@ -34,6 +34,8 @@ export default function Home() {
           under 🚧 construction
         </p>
 
+        <br /> <br /> <br /> 
+        
       </main>
 
       <footer className={styles.footer}>
