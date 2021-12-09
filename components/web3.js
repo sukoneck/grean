@@ -1,5 +1,15 @@
 import { ethers } from 'ethers'
 
+// const ETHBalance = () => {
+//   const { account } = useWeb3React<Web3Provider>();
+//   const { data } = useETHBalance(account);
+
+//   return <p>Balance: Ξ{parseBalance(data ?? 0)}</p>;
+// };
+
+// export default ETHBalance;
+
+
 export async function connectWallet() {
   // https://docs.metamask.io/guide/ethereum-provider.html#ethereum-isconnected
   if (ethereum.selectedAddress !== null) {
@@ -16,13 +26,17 @@ export async function connectWallet() {
       const ready = await provider.ready 
       if (ready) {
         // return PROVIDERWALLET = (await provider.getSigner().getAddress());
-        return await provider.getSigner().getAddress();
+        return <p>Wallet: {await provider.getSigner().getAddress()}</p>;
       }
     } catch (err) {
       console.log("uh oh fam it did not work because: " + err.message);
     }
   }
-}
+};
+
+export const wall = () => {
+  
+} 
 
 export async function walletAddress() {
   if (ethereum.selectedAddress !== null) {
@@ -41,7 +55,8 @@ export async function wallo() {
   try {
     const signer = await provider.getSigner().getAddress();
     console.log(signer);
-    return signer;
+    // return signer;
+    return <p>Wallet: {await provider.getSigner().getAddress()}</p>;
   } catch (err) {
     console.log("gotem")
   }
@@ -53,6 +68,10 @@ export async function wawa() {
   const WALLET = await wallo();
   return WALLET;
 }
+
+// export const ADDY = () => {
+//   return <p>Wallet: {ethereum.selectedAddress}</p>;
+// }
 
 
 

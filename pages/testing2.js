@@ -1,18 +1,17 @@
-import { connectWallet, walletAddress, CONNECTEDWALLET, PROVIDERWALLET, wallo, WALLET, signer, wawa } from '../components/web3'
+import { connectWallet, walletAddress, CONNECTEDWALLET, PROVIDERWALLET, wallo, WALLET, signer, wawa, ADDY } from '../components/web3'
 // import WALLET from '../components/web3'
 // import { ethers } from 'ethers'
-import Head from 'next/head'
+// import { web } from '../components/web3modal'
+// import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+// import HTMLHead from "../components/HTMLHead";
 
-export default function testing() {
+
+export default function testing2() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>grean</title>
-        <meta name="description" content="an 🦙🍜™ project" />
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>"></link>
-      </Head>
+      {/* <HTMLHead /> */}
 
       <main className={styles.main}>
 
@@ -26,6 +25,10 @@ export default function testing() {
 
         {/* <p className={styles.descriptionbox} onClick={walletAddress().then(r => r.toString)}> */}
 
+        {/* <button onClick={web}>
+          web
+        </button> */}
+       
         <button onClick={wallo}>
           wallo
         </button>
@@ -41,6 +44,10 @@ export default function testing() {
         <button onClick={walletAddress}>
           walletAddress = {WALLET}
         </button>
+
+        {/* <ADDY></ADDY>   */}
+
+        <connectWallet />
 
         <div>
           wallet = {WALLET} {signer} {CONNECTEDWALLET} {PROVIDERWALLET}

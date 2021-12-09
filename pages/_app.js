@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 // import styles from '../styles/Home.module.css'
 import 'victormono'
+import HTMLHead from "../components/HTMLHead";
 
 // function head() {
 //   return (
@@ -14,7 +15,10 @@ import 'victormono'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Component {...pageProps} />
+    <div>
+      <HTMLHead />
+      <Component {...pageProps} />
+    </div>
   )
 }
 
