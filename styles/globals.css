@@ -2,16 +2,11 @@
   border: 0;
   margin: 0;
   font-family: 'Victor Mono';
+  line-height: 169%;
 }
 
-html,
-body {
+html {
   background-color: green;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 main {
@@ -22,6 +17,18 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* width: 1000px; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -46,33 +53,28 @@ button {
   border-style: solid;
   border-width: 1.69px;
   box-shadow: 4.2px 4.2px grey;
-  font-size: small;
+  font-size: medium;
+  /* font-style: bold; */
 }
 
 /* GOTTA FIX THIS */
 .connected {
   background-color: grey;
-  box-shadow: 4.2px 4.2px mediumseagreen;
+  box-shadow: 4.2px 4.2px rgb(69, 142, 69);
+  /* border: inset 4.2px 4.2px; */
 }
 
-.container {
-  min-height: 100vh;
+/* .container { */
+  /* margin: 0; */
+  /* flex: 1;  */
+  /* display: flex;  */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.paddingtonhead {
-  padding-bottom: 1.42rem;
-}
-
-.paddington {
-  padding: 1.42rem;
-}
-
-.paddingtonfeet {
-  padding-top: 1.42rem;
-}
-
+} */
 
 .title {
   color: greenyellow;
@@ -90,25 +92,28 @@ button {
 }
 
 /* GOTTA FIX THIS */
-.descriptionbox {
+.box {
   background-color: rgb(69, 142, 69);
-  border-color: greenyellow;
-  border-style: solid;
+  border-color: lightgray;
+  border-style: double;
   border-width: 2px;
-  /* box-shadow: 6.9px 6.9px grey; */
-  font-size: 1.42rem;
-  line-height: 169%;
+  font-size: large;
   padding: 1.42rem;
-  margin-bottom: 4.2%;
-  margin-top: 4.2%;
+  /* margin: auto; */
+  margin-bottom: 1.42rem;
+  margin-top: 1.42rem;
+  /* margin-bottom: 4.2%;
+  margin-top: 4.2%; */
   margin-left: 14.2%;
   margin-right: 14.2%;
 }
 
 .pics {
-  object-fit: contain;
-  margin-bottom: 4.2%;
-  margin-top: 4.2%;
+  /* object-fit: contain; */
+  margin-bottom: 1.42rem;
+  margin-top: 1.42rem;
+  /* margin-bottom: 4.2%;
+  margin-top: 4.2%; */
   margin-left: 14.2%;
   margin-right: 14.2%;
 }

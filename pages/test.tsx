@@ -19,7 +19,7 @@ function Test() {
 
 
   return (
-    <section className="container">
+    <body>
 
       <Header triedToEagerConnect={triedToEagerConnect} />
 
@@ -28,13 +28,13 @@ function Test() {
       <main>
 
         {!isConnected && (
-          <section className="descriptionbox">
+          <section className="box">
             connect your wallet <b>↗</b> button 
           </section>
         )}
 
         {isConnected && (
-          <section className="descriptionbox">
+          <section className="box">
             <b>wow such info</b> <br />
           
             <AccountName />
@@ -52,7 +52,7 @@ function Test() {
 
       <Footer />
 
-    </section>
+    </body>
   );
 }
 

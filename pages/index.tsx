@@ -9,7 +9,7 @@ function Home() {
 
 
   return (
-    <section className="container"> 
+    <body> 
 
       <Header triedToEagerConnect={triedToEagerConnect} />
 
@@ -17,7 +17,7 @@ function Home() {
       
       <main>
 
-        <section className="descriptionbox">
+        <section className="box">
           under 🚧 construction
         </section>
 
@@ -25,7 +25,7 @@ function Home() {
 
       <Footer />
 
-    </section>
+    </body>
   );
 };
 
