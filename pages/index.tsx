@@ -1,45 +1,21 @@
-import { useWeb3React } from "@web3-react/core";
-// import Head from "next/head";
-import Link from "next/link";
-import Image from 'next/image'
-import Account from "../components/Account";
-import ETHBalance from "../components/ETHBalance";
-// import TokenBalance from "../components/TokenBalance";
 import useEagerConnect from "../hooks/useEagerConnect";
-import styles from '../styles/Home.module.css'
-
-const DAI_TOKEN_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Title from "../components/Title";
 
 function Home() {
-  const { account, library } = useWeb3React();
 
   const triedToEagerConnect = useEagerConnect();
 
-  const isConnected = typeof account === "string" && !!library;
 
   return (
-    <div className="container"> 
+    <section className="container"> 
 
-      <header className="nav">
-          <Link href="/">
-            <a>this is the nav bar</a>
-          </Link>
-      </header>
+      <Header triedToEagerConnect={triedToEagerConnect} />
 
+      <Title />
+      
       <main>
-        
-        <h1 className="title">
-          <i>grean</i>
-        </h1>
-
-        <section className="pics">
-          <Image 
-            src="/pipe.gif" 
-            alt="grean" 
-            width={489} 
-            height={489} 
-          />
-        </section>
 
         <section className="descriptionbox">
           under 🚧 construction
@@ -47,14 +23,10 @@ function Home() {
 
       </main>
 
-      <footer>
-        <Link href="/test">
-          <a>🦙🍜™</a>
-        </Link>
-      </footer>
+      <Footer />
 
-    </div>
+    </section>
   );
-}
+};
 
 export default Home;

@@ -1,14 +1,14 @@
 import { useWeb3React } from "@web3-react/core";
-// import Link from "next/link";
-import Image from 'next/image'
-// import Account from "../components/Account";
 import ETHBalance from "../components/ETHBalance";
 import TokenBalance from "../components/TokenBalance";
 import useEagerConnect from "../hooks/useEagerConnect";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Title from "../components/Title";
+import BongGif from "../components/BongGif";
+import AccountName from "../components/AccountName";
 
-const DAI_TOKEN_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f";
+const XMON_TOKEN_ADDRESS = "0x3aaDA3e213aBf8529606924d8D1c55CbDc70Bf74";
 
 function Test() {
   const { account, library } = useWeb3React();
@@ -17,40 +17,42 @@ function Test() {
 
   const isConnected = typeof account === "string" && !!library;
 
+
   return (
-    <div className="container"> 
+    <section className="container">
 
       <Header triedToEagerConnect={triedToEagerConnect} />
 
+      <Title />
+
       <main>
-        
-        <h1 className="title">
-          <i>grean</i>
-        </h1>
 
-        <section className="pics">
-          <Image 
-            src="/pipe.gif" 
-            alt="grean" 
-            width={489} 
-            height={489} 
-          />
-        </section>
+        {!isConnected && (
+          <section className="descriptionbox">
+            connect your wallet <b>↗</b> button 
+          </section>
+        )}
 
-        <section className="paddington">
-          {isConnected && (
-            <section className="descriptionbox">
-              <ETHBalance />
+        {isConnected && (
+          <section className="descriptionbox">
+            <b>wow such info</b> <br />
+          
+            <AccountName />
 
-              <TokenBalance tokenAddress={DAI_TOKEN_ADDRESS} symbol="DAI" />
-            </section>
-          )}
-        </section>
+            <ETHBalance />
+
+            <TokenBalance tokenAddress={XMON_TOKEN_ADDRESS} symbol="XMON" />
+
+          </section>
+        )}
+
+        <BongGif />
 
       </main>
 
       <Footer />
-    </div>
+
+    </section>
   );
 }
 

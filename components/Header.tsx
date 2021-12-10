@@ -5,19 +5,22 @@ import Account from "./Account";
 // const Account = ({ triedToEagerConnect }: AccountProps) => {
 const Header = ({ triedToEagerConnect }) => {
   return (
-    <header>
-      <Link href="/">
-        <section className="nav">
-          this is the nav bar
-        </section>
-      </Link>
+      <header>
+        <button>
+          <Link href="/">
+            home
+          </Link>
+        </button>
 
-      <Link href="/">
-        <a>more nav</a>
-      </Link>
+        <button>
+          <Link href="/test">
+            alpha
+          </Link>
+        </button>
 
-      <Account triedToEagerConnect={triedToEagerConnect} />
-    </header>
+        
+        <Account triedToEagerConnect={triedToEagerConnect} />
+      </header>
   )
 }
 

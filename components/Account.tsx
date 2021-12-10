@@ -69,6 +69,8 @@ const Account = ({ triedToEagerConnect }: AccountProps) => {
   }
 
   return (
+    // <button onClick={formatEtherscanLink("Account", [chainId, account])}
+
     <a
       {...{
         href: formatEtherscanLink("Account", [chainId, account]),
@@ -76,7 +78,9 @@ const Account = ({ triedToEagerConnect }: AccountProps) => {
         rel: "noopener noreferrer",
       }}
     >
-      {ENSName || `${shortenHex(account, 4)}`}
+      <button className="connected">
+        {ENSName || `${shortenHex(account, 4)}`}
+      </button>
     </a>
   );
 };
