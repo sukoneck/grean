@@ -1,9 +1,23 @@
-html,
-body {
-  padding: 0;
+* {
+  border: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Victor Mono';
+  line-height: 169%;
+}
+
+html {
+  background-color: green;
+}
+
+main {
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* width: 1000px; */
 }
 
 a {
@@ -11,6 +25,95 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  height: 42.69px;
+  justify-content: space-evenly;
+  margin-top: 1.42rem;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  height: 42.69px;
+  justify-content: space-evenly;
+  margin-bottom: 1.42rem;
+}
+
+button {
+  background-color: rgb(69, 142, 69);
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1.69px;
+  box-shadow: 4.2px 4.2px grey;
+  font-size: medium;
+  /* font-style: bold; */
+}
+
+/* GOTTA FIX THIS */
+.connected {
+  background-color: grey;
+  box-shadow: 4.2px 4.2px rgb(69, 142, 69);
+  /* border: inset 4.2px 4.2px; */
+}
+
+/* .container { */
+  /* margin: 0; */
+  /* flex: 1;  */
+  /* display: flex;  */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
+
+.title {
+  color: greenyellow;
+  font-size: 4.2rem;
+  padding: 1.42rem;
+  text-align: center;
+  text-shadow: 2.42px 2.42px black;
+}
+
+.description {
+  line-height: 1.42;
+  font-size: 1.42rem;
+  padding: 1.42rem;
+  border-style: outset;
+}
+
+/* GOTTA FIX THIS */
+.box {
+  background-color: rgb(69, 142, 69);
+  border-color: lightgray;
+  border-style: double;
+  border-width: 2px;
+  font-size: large;
+  padding: 1.42rem;
+  /* margin: auto; */
+  margin-bottom: 1.42rem;
+  margin-top: 1.42rem;
+  /* margin-bottom: 4.2%;
+  margin-top: 4.2%; */
+  margin-left: 14.2%;
+  margin-right: 14.2%;
+}
+
+.pics {
+  /* object-fit: contain; */
+  margin-bottom: 1.42rem;
+  margin-top: 1.42rem;
+  /* margin-bottom: 4.2%;
+  margin-top: 4.2%; */
+  margin-left: 14.2%;
+  margin-right: 14.2%;
 }
