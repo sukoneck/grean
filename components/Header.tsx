@@ -13,7 +13,7 @@ const Header = ({ triedToEagerConnect }) => {
         </button>
 
         <button>
-          <Link href="/test">
+          <Link href="/alpha">
             alpha
           </Link>
         </button>

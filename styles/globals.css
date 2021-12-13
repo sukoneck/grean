@@ -18,6 +18,7 @@ main {
   align-items: center;
   text-align: center;
   /* width: 1000px; */
+
 }
 
 a {
@@ -26,23 +27,29 @@ a {
 }
 
 body {
+  /* min-height: 80vh; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* position: relative; */
 }
 
 footer {
   align-items: center;
   display: flex;
-  height: 42.69px;
+  height: 69.42px;
   justify-content: space-evenly;
+  /* margin-top: auto; */
   margin-top: 1.42rem;
+  /* margin-bottom: -20vh; */
+  /* bottom: 0; */
+
 }
 
 header {
   align-items: center;
   display: flex;
-  height: 42.69px;
+  height: 69.42px;
   justify-content: space-evenly;
   margin-bottom: 1.42rem;
 }
@@ -53,8 +60,9 @@ button {
   border-style: solid;
   border-width: 1.69px;
   box-shadow: 4.2px 4.2px grey;
-  font-size: medium;
-  /* font-style: bold; */
+  font-size: large;
+  font-weight: bold;
+  color: black;
 }
 
 /* GOTTA FIX THIS */
@@ -78,7 +86,7 @@ button {
 
 .title {
   color: greenyellow;
-  font-size: 4.2rem;
+  font-size: 5.69rem;
   padding: 1.42rem;
   text-align: center;
   text-shadow: 2.42px 2.42px black;
@@ -97,7 +105,7 @@ button {
   border-color: lightgray;
   border-style: double;
   border-width: 2px;
-  font-size: large;
+  font-size: x-large;
   padding: 1.42rem;
   /* margin: auto; */
   margin-bottom: 1.42rem;

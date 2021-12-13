@@ -10,7 +10,7 @@ import AccountName from "../components/AccountName";
 
 const XMON_TOKEN_ADDRESS = "0x3aaDA3e213aBf8529606924d8D1c55CbDc70Bf74";
 
-function Test() {
+function Alpha() {
   const { account, library } = useWeb3React();
 
   const triedToEagerConnect = useEagerConnect();
@@ -56,4 +56,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default Alpha;

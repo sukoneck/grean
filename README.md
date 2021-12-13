@@ -6,7 +6,7 @@ This is the website for ***grean*** and it is currently under 🚧 construction.
 # Architecture
 ## Dev
 
-`npm run dev`
+```npm run dev```
 
 ## Prod
 
