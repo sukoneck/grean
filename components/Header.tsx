@@ -17,7 +17,6 @@ const Header = ({ triedToEagerConnect }) => {
             alpha
           </Link>
         </button>
-
         
         <Account triedToEagerConnect={triedToEagerConnect} />
       </header>
